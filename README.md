@@ -67,8 +67,8 @@ To deploy the LoRaWAN gateway on your Raspberry Pi, follow these steps:
     Wants=network-online.target
 
     [Service]
-    WorkingDirectory=~/LoRaWAN-Pi4/packet_forwarder
-    ExecStart=~/LoRaWAN-Pi4/packet_forwarder/lora_pkt_fwd
+    WorkingDirectory=/home/benjamin/LoRaWAN-Pi4/packet_forwarder
+    ExecStart=/home/benjamin/LoRaWAN-Pi4/packet_forwarder/lora_pkt_fwd
     Restart=always
     RestartSec=5
     User=root
